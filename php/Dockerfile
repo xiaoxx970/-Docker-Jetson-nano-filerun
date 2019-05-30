@@ -1,5 +1,5 @@
-FROM FROM arm64v8/php:7.2-fpm
-MAINTAINER Xiaoxx
+FROM arm64v8/php:7.2-fpm
+MAINTAINER Xiaoxx <me@xiaoxx.cc>
 
 # Install Ioncube
 RUN curl -O https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_aarch64.tar.gz \
