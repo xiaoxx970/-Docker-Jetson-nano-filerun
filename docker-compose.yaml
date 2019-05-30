@@ -3,7 +3,7 @@ services:
   filerun:
     build: .
     ports:
-      - "8000:80"
+      - "80:80"
     volumes:
       - webroot:/usr/share/nginx/html
       - ./php/etc/nginx/conf.d/:/etc/nginx/conf.d:ro
