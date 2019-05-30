@@ -1,13 +1,13 @@
-FROM arm32v7/php:7.0-fpm
-MAINTAINER Tuuu <song@secbox.cn>
+FROM FROM arm64v8/php:7.2-fpm
+MAINTAINER Xiaoxx
 
 # Install Ioncube
-RUN curl -O https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_armv7l.tar.gz \
- && tar xvfz ioncube_loaders_lin_armv7l.tar.gz \
+RUN curl -O https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_aarch64.tar.gz \
+ && tar xvfz ioncube_loaders_lin_aarch64.tar.gz \
  && PHP_EXT_DIR=$(php-config --extension-dir) \
  && cp "ioncube/ioncube_loader_lin_7.0.so" $PHP_EXT_DIR \
  && echo "zend_extension=ioncube_loader_lin_7.0.so" >> /usr/local/etc/php/conf.d/00_ioncube_loader_lin_7.0.ini \
- && rm -rf ioncube ioncube_loaders_lin_armv7l.tar.gz
+ && rm -rf ioncube ioncube_loaders_lin_aarch64.tar.gz
 
 
 # install php extensions
