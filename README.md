@@ -1,6 +1,6 @@
 # Jetson-filerun
 
-Filerun + Aria2 + AriaNg 搭建可离线下载的云盘 for 树莓派
+Filerun + Aria2 + AriaNg 搭建可离线下载的云盘 for Jetson nano
 
 # install
 
